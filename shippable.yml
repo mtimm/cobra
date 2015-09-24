@@ -8,7 +8,7 @@ before_install:
    - mkdir -p shippable/testresults
    - mkdir -p shippable/codecoverage
    - echo "============ removing old pypy symlink =============="
-   - rm -f /usr/local/bin/pypy
+   - sudo rm -f /usr/local/bin/pypy
    - echo "============ downloading pypy =============="
    - cd /opt && sudo wget https://bitbucket.org/pypy/pypy/downloads/pypy-2.6.1-linux64.tar.bz2 && sudo tar -xjvf pypy-2.6.1-linux64.tar.bz2
    - echo "============== creating symlink for pypy ==============="
