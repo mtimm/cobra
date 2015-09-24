@@ -16,6 +16,8 @@ before_install:
    - mkdir -p $HOME/bldve/
    - virtualenv -p $SHIPPABLE_PYTHON  $HOME/bldve/
    - source $HOME/bldve/bin/activate
+   - python --version
+   - which python
 
 install: 
   - pip install -r requirements.txt
